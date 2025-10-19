@@ -1,0 +1,27 @@
+[project]
+name = "y"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "matt529",email = "p14529@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "django (>=5.2.7,<6.0.0)",
+    "djangorestframework (>=3.16.1,<4.0.0)",
+    "django-cors-headers (>=4.9.0,<5.0.0)",
+    "djangorestframework-simplejwt (>=5.5.1,<6.0.0)",
+    "dj-database-url (>=3.0.1,<4.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+readme = "README.md"
+
+packages = [
+    { include = "med_table" }  # 你的 Django app 名稱
+]
